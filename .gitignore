@@ -1,0 +1,5 @@
+venv
+model
+build
+dist
+temp.py

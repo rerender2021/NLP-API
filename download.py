@@ -1,0 +1,2 @@
+from huggingface_hub import snapshot_download
+snapshot_download(repo_id="Helsinki-NLP/opus-mt-en-zh", revision="a4193836671069f1f80ce341f9227a850ffb52d4", cache_dir="./model", ignore_patterns=["flax_model.msgpack", "rust_model.ot","tf_model.h5"])
