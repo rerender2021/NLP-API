@@ -15,6 +15,8 @@ This is a NLP API server.
 
 - Unzip it, and click `run.bat`
 
+![run-from-cmd](./docs/run-from-cmd.png)
+
 # API
 
 - Default host: `http://localhost:8100`
