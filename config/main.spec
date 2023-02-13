@@ -15,7 +15,7 @@ datas += copy_metadata('tokenizers')
 block_cipher = None
 
 a = Analysis(
-    ['main.py'],
+    ['..\\src\\main.py'],
     pathex=[],
     binaries=[],
     datas=datas,
@@ -47,7 +47,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['favicon.ico']
+    icon=['..\\asset\\favicon.ico']
 )
 coll = COLLECT(
     exe,

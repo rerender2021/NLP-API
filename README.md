@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="450" src="./logo-1.png">
+    <img width="450" src="./docs/logo.png">
 </p>
 
 <div align="center">
@@ -11,51 +11,57 @@ This is a NLP API server.
 
 # Usage
 
-- download it from [Github Release](https://github.com/rerender2021/NLP-API/releases).
+- Download it from [release](https://github.com/rerender2021/NLP-API/releases)
 
-- unzip it, and click `run.bat`.
+- Unzip it, and click `run.bat`
 
 # API
 
-- default host: `http://localhost:8100`
+- Default host: `http://localhost:8100`
   
 ## POST /translate
 
-- description: offline translation
-- example:
+- Description: offline translation
+- Example:
 
 ![api-translate](./docs/api-translate.png)
 
 # Dev
 
-- install
+- Install
 
 ```bash
 > virtualenv venv --python=python3.8.10
 > pip install -r requirements.txt
 ```
 
-- download model
+- Download model
 
 ```bash
-> python download.py
+> python ./script/download.py
 ```
 
 Then, adjust `model` folder structure like this:
 
-![model-dir](./docs/model-dir.png)
+```
+- ...
+- model
+    - opus-mt-en-zh
+- ...
+- README.md
+```
 
-- run
+- Run
 
 ```bash
-> python main.py
+> python ./src/main.py
 ```
 
 # Package
 
-- build: `build.bat`
-- pack: `pack.bat`
-- test: cd `dist/NLP-API`, click `run.bat`
+```bash
+> build
+```
 
 # License
 
